@@ -20,8 +20,8 @@ show-git-branch()
     git branch 2> /dev/null | sed '/^[^*]/d; s/^\*//'
     return $RET
 }
-#PS1='${debian_chroot:+($debian_chroot)}\[\033[01;33m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\033[01;35m\]$(show-git-branch) \[\033[1;$((31+3*!$?))m\]\$\[\033[00m\] '
-PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\033[01;35m\]$(show-git-branch) \[\033[1;$((31+3*!$?))m\]\$\[\033[00m\] '
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;33m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\033[01;35m\]$(show-git-branch) \[\033[1;$((31+3*!$?))m\]\$\[\033[00m\] '
+#PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\033[01;35m\]$(show-git-branch) \[\033[1;$((31+3*!$?))m\]\$\[\033[00m\] '
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -74,6 +74,9 @@ alias ff='dirs -p -v'
 alias mm='make clean && make'
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+
+export LC_ALL="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
 
 # For Kaveri
 #export C_INCLUDE_PATH=$C_INCLUDE_PATH:/opt/AMDAPPSDK-3.0/include
