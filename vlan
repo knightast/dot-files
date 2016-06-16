@@ -4,4 +4,6 @@ route add -net 101.5.0.0 netmask 255.255.0.0 gw 166.111.69.1
 route add -net 166.111.0.0 netmask 255.255.0.0 gw 166.111.69.1
 route add -net 59.66.0.0 netmask 255.255.0.0 gw 166.111.69.1
 route add -net 183.173.0.0 netmask 255.255.0.0 gw 166.111.69.1
+route del -net 0.0.0.0 dev eth0.2
+route add default gw 172.23.0.1 eth0
 
