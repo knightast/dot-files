@@ -19,7 +19,7 @@ set showmatch
 set scrolloff=3
 "set wildmenu
 "set nowrap
-set ignorecase
+"set ignorecase
 if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch

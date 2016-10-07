@@ -1,0 +1,5 @@
+HashKnownHosts no
+GSSAPIAuthentication no
+Host hq hq.lab.pacman-thu.org
+    hostname hq.lab.pacman-thu.org
+    port 2222
