@@ -18,9 +18,9 @@ tar xf vim.tgz
 cp -r $PWD/_vim $HOME/.vim
 
 
-echo "Gen ssh key..."
-if [ ! -f $HOME/.ssh ]
+if [ ! -d $HOME/.ssh ]
 then
+  echo "Gen ssh key..."
   ssh-keygen
   cp $PWD/_ssh_config $HOME/.ssh/config
 fi
