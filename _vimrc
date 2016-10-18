@@ -10,7 +10,8 @@ call pathogen#infect()
 " Display related settings
 set nocompatible
 set background=dark
-set foldmethod=marker
+" set foldmethod=marker
+set foldmethod=syntax
 set matchtime=1
 set number
 set ruler
