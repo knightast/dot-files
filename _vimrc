@@ -60,6 +60,7 @@ endif
 
 " Miscellaneous settings
 map Q gq
+map zz zA
 imap jj <Esc>
 vnoremap // y/<C-R>"<CR>
 
